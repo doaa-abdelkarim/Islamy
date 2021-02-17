@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_horizontal_0.03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_horizontal_0.45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_vertical_0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_vertical_0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/image_view_sebha"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_desc_sebha_image"
+        android:src="@drawable/sebha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guide_line_horizontal_0.03" />
+
+    <ImageView
+        android:id="@+id/image_view_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_desc_reset_image"
+        android:src="@drawable/ic_reset"
+        app:layout_constraintBottom_toTopOf="@id/guide_line_horizontal_0.45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_sebha" />
+
+    <TextView
+        android:id="@+id/text_view_total_count"
+        style="@style/SebhaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/total_count"
+        app:layout_constraintEnd_toEndOf="@id/button_total_count"
+        app:layout_constraintStart_toStartOf="@id/button_total_count"
+        app:layout_constraintTop_toBottomOf="@id/guide_line_horizontal_0.45" />
+
+    <Button
+        android:id="@+id/button_total_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/sebha_widgets_background"
+        android:enabled="false"
+        android:minHeight="30dp"
+        android:text="@string/total_count_value"
+        android:textColor="@color/colorTextColor"
+        app:layout_constraintStart_toStartOf="@id/guide_line_vertical_0.1"
+        app:layout_constraintTop_toBottomOf="@id/text_view_total_count" />
+
+    <TextView
+        android:id="@+id/text_view_tasbiha_count"
+        style="@style/SebhaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/tasbiha"
+        app:layout_constraintEnd_toEndOf="@id/button_tasbiha_count"
+        app:layout_constraintStart_toStartOf="@id/button_tasbiha_count"
+        app:layout_constraintTop_toBottomOf="@id/guide_line_horizontal_0.45" />
+
+    <Button
+        android:id="@+id/button_tasbiha_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/sebha_widgets_background"
+        android:minHeight="30dp"
+        android:text="@string/tasbiha_count_value"
+        android:textColor="@color/colorTextColor"
+        app:layout_constraintEnd_toEndOf="@+id/guide_line_vertical_0.9"
+        app:layout_constraintTop_toBottomOf="@id/text_view_tasbiha_count" />
+
+    <Spinner
+        android:id="@+id/spinner_tasbih"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sebha_widgets_background"
+        android:entries="@array/tasbih"
+        android:padding="8dp"
+        android:popupBackground="@drawable/sebha_widgets_background"
+        android:theme="@style/TasabihSpinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_total_count"
+        app:layout_constraintWidth_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
