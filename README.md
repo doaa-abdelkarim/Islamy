@@ -1,6 +1,6 @@
 # Islamy app
 <p>
-  This application displays The Holy Quran, Hadiths, Digital prayer beads, and Islamic radio stations for the user. 
+  This application displays the Holy Quran, hadiths, digital prayer beads, and islamic radio stations for the user. 
 </p>
 
 <br/>
