@@ -4,10 +4,8 @@
   <br/>The Holy Quran, 
   <br/>Hadiths, 
   <br/>Digital prayer beads, 
-  <br/>and Islamic radio stations for the user
+  <br/>and Islamic radio stations for the user. 
 </p>
-
-
 
 <br/>
 <br/>
