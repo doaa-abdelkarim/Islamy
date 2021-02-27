@@ -1,4 +1,12 @@
 # Islamy app
+<p>
+  This application displays
+  The Holy Quran
+  Hadiths
+  Digital prayer beads, 
+  and Islamic radio stations for the user
+
+</p>
 
 <img src = "screenshots/1.png" width = 300 /> <img src = "screenshots/2.png" width = 300 />
 
